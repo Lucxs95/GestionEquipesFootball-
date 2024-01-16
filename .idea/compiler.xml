@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="player-service" />
+        <module name="match-service" />
+        <module name="team-service" />
+        <module name="eureka-server" />
+        <module name="stats-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="match-service.aot" target="17" />
+      <module name="match-service.aotTest" target="17" />
+      <module name="match-service.main" target="17" />
+      <module name="match-service.test" target="17" />
+      <module name="PlayerService" target="17" />
+      <module name="StatsService" target="17" />
+      <module name="StatsService.main" target="17" />
+      <module name="StatsService.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-server" options="-parameters" />
+      <module name="match-service" options="-parameters" />
+      <module name="player-service" options="-parameters" />
+      <module name="stats-service" options="-parameters" />
+      <module name="team-service" options="-parameters" />
+    </option>
+  </component>
+</project>
